@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import axios from 'axios';
-import config from './config';  // import the config
+import config from './config.jsx';  // import the config
 
 const ViewProducts = () => {
   const [products, setProducts] = useState([]);

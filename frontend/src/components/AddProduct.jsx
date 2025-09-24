@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import axios from 'axios';
-import config from './config.js'; // import your config
+import config from './config.jsx'; // import your config
 
 const AddProduct = () => {
   const [product, setProduct] = useState({ name: '', price: '', description: '' });
