@@ -13,7 +13,6 @@
 	<version>0.0.1-SNAPSHOT</version>
 	<packaging>war</packaging>
 	<name>backend</name>
-	
 	<description>Demo project for Spring Boot</description>
 	<url/>
 	<licenses>
@@ -70,7 +69,6 @@
 	</dependencies>
 
 	<build>
-		<finalName>jenkinsbackend</finalName>
 		<plugins>
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
