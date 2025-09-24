@@ -1,0 +1,5 @@
+package com.klef.backend.model;
+
+public class Product {
+
+}

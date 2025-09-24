@@ -1,0 +1,5 @@
+package com.klef.backend.repository;
+
+public interface ProuctRepository {
+
+}
