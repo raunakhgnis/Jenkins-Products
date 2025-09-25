@@ -19,7 +19,12 @@ public class ProductController {
     public Product addProduct(@RequestBody Product product) {
         return repository.save(product);
     }
-
+    
+    @GetMapping("/klu")
+    public String check() {
+    	return "<h1>checking jenkins<h1>";
+    }
+    
     @GetMapping
     public List<Product> getAllProducts() {
         return repository.findAll();
