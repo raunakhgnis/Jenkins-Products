@@ -15,7 +15,7 @@ public class ProductController {
     @Autowired
     private ProductRepository repository;
 
-    @PostMapping
+    @PostMapping("/add")
     public Product addProduct(@RequestBody Product product) {
         return repository.save(product);
     }
@@ -30,12 +30,12 @@ public class ProductController {
         return repository.findAll();
     }
 
-    @GetMapping("/{id}")
+    @GetMapping("/get/{id}")
     public Product getProductById(@PathVariable Long id) {
         return repository.findById(id).orElse(null);
     }
 
-    @PutMapping("/{id}")
+    @PutMapping("/update/{id}")
     public Product updateProduct(@PathVariable Long id, @RequestBody Product updatedProduct) {
         return repository.findById(id).map(product -> {
             product.setName(updatedProduct.getName());
@@ -45,7 +45,7 @@ public class ProductController {
         }).orElse(null);
     }
 
-    @DeleteMapping("/{id}")
+    @DeleteMapping("/delete/{id}")
     public void deleteProduct(@PathVariable Long id) {
         repository.deleteById(id);
     }
