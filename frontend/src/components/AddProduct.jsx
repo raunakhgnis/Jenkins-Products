@@ -13,7 +13,7 @@ const AddProduct = () => {
     e.preventDefault();
     try {
       
-      await axios.post(`${config.url}`, product);
+      await axios.post(`${config.url}/add`, product);
 
       alert('Product added successfully');
       setProduct({ name: '', price: '', description: '' });
